@@ -40,4 +40,10 @@ class HomesController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @home = Home.find_by(id: params[:id])
+    @home.destroy
+    render json: { message: "Home demolished successfully!" }
+  end
 end
