@@ -1,25 +1,53 @@
-# README
+# Real Estate API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Real Estate API is a Ruby on Rails application that provides endpoints for managing property listings, agents, and more. It allows users to perform CRUD actions (Create, Read, Update, Delete) on various resources related to real estate.
+```
+## Installation
 
-Things you may want to cover:
+To use the Real Estate API, you need to have Ruby and Ruby on Rails installed. Follow these steps to set up the application:
 
-* Ruby version
+1. Clone this repository:
+   
+   git clone https://github.com/your-username/real-estate-api.git
+Navigate to the application directory:
+```
 
-* System dependencies
 
-* Configuration
+```
+cd real-estate-api
+Set up the database:
+```
 
-* Database creation
 
-* Database initialization
+```
+rails db:create db:migrate
+Start the Rails server:
+```
+```
+API Endpoints
+Properties
+Get All Properties
 
-* How to run the test suite
+GET /homes
+```
+```
+Get Property by ID
 
-* Services (job queues, cache servers, search engines, etc.)
+GET /homes/:id
+```
+```
+Create Property
 
-* Deployment instructions
+POST /homes
+Update Property
 
-* ...
-# real-estate-api
+
+
+PATCH /homes/:id
+```
+```
+Delete Property
+
+DELETE /homes/:id
+```
+
